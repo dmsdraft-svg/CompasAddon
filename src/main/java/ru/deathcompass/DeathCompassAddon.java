@@ -31,6 +31,7 @@ public class DeathCompassAddon extends JavaPlugin implements Listener {
         ItemStack compass = new ItemStack(Material.COMPASS);
         ItemMeta meta = compass.getItemMeta();
         meta.setDisplayName(ChatColor.RED + "Компас смерти");
+        meta.setEnchantmentGlintOverride(true); // эффект зачарования
         List<String> lore = new ArrayList<>();
         lore.add(ChatColor.WHITE + "Никнейм: " + ChatColor.LIGHT_PURPLE + p.getName());
         lore.add(ChatColor.WHITE + "Мир: " + ChatColor.GREEN + worldName(loc));
